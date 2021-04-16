@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/login.css">
+<title> Register Page </title>
+</head>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="" href="logo - Copy.svg">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="..public/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <!-- Tailwind Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+<body>
+  <body>
+   <%- include ("./header") %>
+    <div class="login-page">
+      <div class="form">
+        <div class="login">
+          <div class="login-header">
+            <h3>Register Now</h3>
+          </div>
+        </div>
+        <form class="login-form" action="/register" method="POST">
+          <input type="text" name ="username" placeholder="Username"/>
+          <input type="password" placeholder="Password" name="password">
+          <button>Register</button>
+          <p class="message">Already registered? <a href="/login">Log in </a></p>
+        </form>
+      </div>
+    </div>
+</body>
+<%- include ("./footer") %>
+</html>
